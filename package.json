@@ -1,0 +1,13 @@
+{
+  "description": "Automated test project for PayMate",
+  "author": "Abdul Manaf Sulley",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29"
+  },
+  "scripts": {
+    "playwright:install": "npx playwright install --with-deps",
+    "playwright:run": " npx playwright test",
+    "playwright:report": "npx playwright show-report"
+  }
+}

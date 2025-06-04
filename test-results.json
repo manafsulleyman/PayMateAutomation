@@ -1,0 +1,1848 @@
+{
+  "config": {
+    "configFile": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/playwright.config.ts",
+    "rootDir": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "API Test/api.fund.wallet.spec.ts",
+      "file": "API Test/api.fund.wallet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Fund wallet API Tests",
+          "file": "API Test/api.fund.wallet.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should successfully fund wallet with amount and card info",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 461,
+                      "error": {
+                        "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n",
+                        "stack": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\n    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\n    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\n    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.fund.wallet.spec.ts:22:27)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\n    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/support/util.ts",
+                          "column": 34,
+                          "line": 20
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/support/util.ts",
+                            "column": 34,
+                            "line": 20
+                          },
+                          "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\u001b[22m\n\u001b[2m    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\u001b[22m\n\u001b[2m    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\u001b[22m\n\u001b[2m    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.fund.wallet.spec.ts:22:27)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\u001b[22m\n\u001b[2m    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/support/util.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:16.582Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/support/util.ts",
+                        "column": 34,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-8198b7264d4d6e4188ab",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "Insufficient card balanace: Should not be able to fund with card with insufficient balance",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 460,
+                      "error": {
+                        "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n",
+                        "stack": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\n    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\n    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\n    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.fund.wallet.spec.ts:22:27)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\n    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/support/util.ts",
+                          "column": 34,
+                          "line": 20
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/support/util.ts",
+                            "column": 34,
+                            "line": 20
+                          },
+                          "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\u001b[22m\n\u001b[2m    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\u001b[22m\n\u001b[2m    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\u001b[22m\n\u001b[2m    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.fund.wallet.spec.ts:22:27)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\u001b[22m\n\u001b[2m    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/support/util.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:16.580Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/support/util.ts",
+                        "column": 34,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-a8e1324da61363741bae",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "Expired card: Should not be able to fund wallet with expired card",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 460,
+                      "error": {
+                        "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n",
+                        "stack": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\n    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\n    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\n    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.fund.wallet.spec.ts:22:27)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\n    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/support/util.ts",
+                          "column": 34,
+                          "line": 20
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/support/util.ts",
+                            "column": 34,
+                            "line": 20
+                          },
+                          "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\u001b[22m\n\u001b[2m    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\u001b[22m\n\u001b[2m    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\u001b[22m\n\u001b[2m    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.fund.wallet.spec.ts:22:27)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\u001b[22m\n\u001b[2m    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/support/util.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:16.580Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/support/util.ts",
+                        "column": 34,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-95786a092f0745af6695",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "Should successfully fund wallet with amount and card info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-7ddb4839d5c65a19409c",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "Insufficient card balanace: Should not be able to fund with card with insufficient balance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-64b1f252454de9dcfe41",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "Expired card: Should not be able to fund wallet with expired card",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-40ede9227e61f4dc5f09",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "Should successfully fund wallet with amount and card info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-bb3882c13ae19ce01b59",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "Insufficient card balanace: Should not be able to fund with card with insufficient balance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-bba01170538d1aec7623",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "Expired card: Should not be able to fund wallet with expired card",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a9c0f93ac371c7705b3-d693c1594113f89626cf",
+              "file": "API Test/api.fund.wallet.spec.ts",
+              "line": 55,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "API Test/api.get.transaction.spec.ts",
+      "file": "API Test/api.get.transaction.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "View Transactions API Tests",
+          "file": "API Test/api.get.transaction.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Retrieves transaction history",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 462,
+                      "error": {
+                        "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n",
+                        "stack": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\n    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\n    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\n    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.get.transaction.spec.ts:15:31)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\n    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/support/util.ts",
+                          "column": 34,
+                          "line": 20
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/support/util.ts",
+                            "column": 34,
+                            "line": 20
+                          },
+                          "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\u001b[22m\n\u001b[2m    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\u001b[22m\n\u001b[2m    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\u001b[22m\n\u001b[2m    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.get.transaction.spec.ts:15:31)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\u001b[22m\n\u001b[2m    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/support/util.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:16.580Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/support/util.ts",
+                        "column": 34,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "42342116de2b46270f82-d699c8f053a5af60fafc",
+              "file": "API Test/api.get.transaction.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "Retrieves transaction history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "42342116de2b46270f82-30e889e9f38560f4c8d8",
+              "file": "API Test/api.get.transaction.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "Retrieves transaction history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "42342116de2b46270f82-65f2927e539afb152f01",
+              "file": "API Test/api.get.transaction.spec.ts",
+              "line": 22,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "API Test/api.send.money.spec.ts",
+      "file": "API Test/api.send.money.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Send Money API Tests",
+          "file": "API Test/api.send.money.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should be able to send money to another user",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 534,
+                      "error": {
+                        "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n",
+                        "stack": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\n    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\n    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\n    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.send.money.spec.ts:19:27)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\n    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/support/util.ts",
+                          "column": 34,
+                          "line": 20
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/support/util.ts",
+                            "column": 34,
+                            "line": 20
+                          },
+                          "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\u001b[22m\n\u001b[2m    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\u001b[22m\n\u001b[2m    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\u001b[22m\n\u001b[2m    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.send.money.spec.ts:19:27)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\u001b[22m\n\u001b[2m    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/support/util.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:16.585Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/support/util.ts",
+                        "column": 34,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bdfac720a9a34a55d0a2-52012c34dd2706582f06",
+              "file": "API Test/api.send.money.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": " Minimal Account Balance Limitation : Should not be able to send full wallet balance",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 244,
+                      "error": {
+                        "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n",
+                        "stack": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\n    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\n    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\n    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.send.money.spec.ts:19:27)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\n    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\n    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/support/util.ts",
+                          "column": 34,
+                          "line": 20
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/support/util.ts",
+                            "column": 34,
+                            "line": 20
+                          },
+                          "message": "Error: getaddrinfo ENOTFOUND api.paymate-simulated.com\nCall log:\n\u001b[2m  - → POST https://api.paymate-simulated.com/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.25 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 43\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at APIRequestContext._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at APIRequestContext._innerFetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:128:23)\u001b[22m\n\u001b[2m    at APIRequestContext.fetch (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:125:23)\u001b[22m\n\u001b[2m    at APIRequestContext.post (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/fetch.js:111:23)\u001b[22m\n\u001b[2m    at apilogin (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/support/util.ts:20:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/API Test/api.send.money.spec.ts:19:27)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:11)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:67:14)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:7)\u001b[22m\n\u001b[2m    at FixtureRunner.resolveParametersAndRunFunction (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/fixtureRunner.js:223:5)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:460:11)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at WorkerMain._runEachHooksForSuites (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:459:9)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:296:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runAsStep (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:266:7)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:292:7)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/support/util.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:18.004Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/support/util.ts",
+                        "column": 34,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bdfac720a9a34a55d0a2-74e92a04d160e9fd3a77",
+              "file": "API Test/api.send.money.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "Should be able to send money to another user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bdfac720a9a34a55d0a2-e911f0dbbfca8cde5f60",
+              "file": "API Test/api.send.money.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": " Minimal Account Balance Limitation : Should not be able to send full wallet balance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bdfac720a9a34a55d0a2-7cf0a9f4ca6e3b8bf24f",
+              "file": "API Test/api.send.money.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "Should be able to send money to another user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bdfac720a9a34a55d0a2-d6c1fa8af49aae65c6de",
+              "file": "API Test/api.send.money.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": " Minimal Account Balance Limitation : Should not be able to send full wallet balance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bdfac720a9a34a55d0a2-30413fe6175167db4789",
+              "file": "API Test/api.send.money.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "UI Test/auth/login.spec.ts",
+      "file": "UI Test/auth/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "login functionality test",
+          "file": "UI Test/auth/login.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "✅ Successful login: Should successfully login with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "interrupted",
+                      "duration": 8450,
+                      "error": {
+                        "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n",
+                        "stack": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\n    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\n    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:20:45)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                          "column": 45,
+                          "line": 20
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                            "column": 45,
+                            "line": 20
+                          },
+                          "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\u001b[22m\n\u001b[2m    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\u001b[22m\n\u001b[2m    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:20:45)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/tests/UI Test/auth/login.spec.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:18.008Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                        "column": 45,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-a7983e4d8e5dd81c0009",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "❌ Empty Fields: Should show validation errors when fields are empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "interrupted",
+                      "duration": 8456,
+                      "error": {
+                        "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Login' })\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n",
+                        "stack": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Login' })\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\n    at Frame.click (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:246:32)\n    at Locator.click (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:87:30)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:31:55)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                          "column": 55,
+                          "line": 31
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                            "column": 55,
+                            "line": 31
+                          },
+                          "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Login' })\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\u001b[22m\n\u001b[2m    at Frame.click (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:246:32)\u001b[22m\n\u001b[2m    at Locator.click (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:87:30)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:31:55)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/tests/UI Test/auth/login.spec.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:18.005Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                        "column": 55,
+                        "line": 31
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-bb9d1588a29345ed9bf2",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with wrong username and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "interrupted",
+                      "duration": 8441,
+                      "error": {
+                        "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n",
+                        "stack": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\n    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\n    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:38:45)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                          "column": 45,
+                          "line": 38
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                            "column": 45,
+                            "line": 38
+                          },
+                          "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\u001b[22m\n\u001b[2m    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\u001b[22m\n\u001b[2m    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:38:45)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/tests/UI Test/auth/login.spec.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:18.005Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                        "column": 45,
+                        "line": 38
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-a9e73d72cc57cf6a8b80",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with incorrect password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "interrupted",
+                      "duration": 8448,
+                      "error": {
+                        "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n",
+                        "stack": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\n    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\n    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:47:45)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                          "column": 45,
+                          "line": 47
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                            "column": 45,
+                            "line": 47
+                          },
+                          "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\u001b[22m\n\u001b[2m    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\u001b[22m\n\u001b[2m    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:47:45)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/tests/UI Test/auth/login.spec.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:18.005Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                        "column": 45,
+                        "line": 47
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-6e76823e4214207baee6",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with wrong username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
+                      "status": "interrupted",
+                      "duration": 7809,
+                      "error": {
+                        "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n",
+                        "stack": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\n    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\n    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\n    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\n    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\n    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:56:45)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\n    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\n    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\n    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\n    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\n    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\n    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)",
+                        "location": {
+                          "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                          "column": 45,
+                          "line": 56
+                        }
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                            "column": 45,
+                            "line": 56
+                          },
+                          "message": "Error: Test ended.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Username')\u001b[22m\n\u001b[2m    - waiting for\" https://test101.com/lander\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"https://test101.com/lander\"\u001b[22m\n\n\u001b[2m    at captureRawStack (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/utils/isomorphic/stackTrace.js:32:17)\u001b[22m\n\u001b[2m    at captureLibraryStackTrace (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/clientStackTrace.js:26:55)\u001b[22m\n\u001b[2m    at Frame._wrapApiCall (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:156:77)\u001b[22m\n\u001b[2m    at Proxy.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/channelOwner.js:129:33)\u001b[22m\n\u001b[2m    at Frame.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/frame.js:258:32)\u001b[22m\n\u001b[2m    at Locator.fill (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright-core/lib/client/locator.js:111:30)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/tests/UI Test/auth/login.spec.ts:56:45)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:304:15)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:277:17)\u001b[22m\n\u001b[2m    at TimeoutManager.withRunnable (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/timeoutManager.js:68:9)\u001b[22m\n\u001b[2m    at TestInfoImpl._runWithTimeout (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/testInfo.js:275:34)\u001b[22m\n\u001b[2m    at /Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:302:22)\u001b[22m\n\u001b[2m    at WorkerMain._runTest (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:277:5)\u001b[22m\n\u001b[2m    at WorkerMain.runTestGroup (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/worker/workerMain.js:193:11)\u001b[22m\n\u001b[2m    at process.<anonymous> (/Users/manafsulleyman/Desktop/Peswa TakeHome/Task 3 (API & UI Automation 1/node_modules/playwright/lib/common/process.js:70:22)\u001b[22m"
+                        },
+                        {
+                          "message": "Error: ENOENT: no such file or directory, open 'API & UI Automation 1/tests/UI Test/auth/login.spec.ts'"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-06-04T17:11:18.725Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "API & UI Automation 1/tests/UI Test/auth/login.spec.ts",
+                        "column": 45,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-4e76f40491e1c169d908",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should show validation errors when password field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-6696d70529d3813b2a30",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 62,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should show validation errors when username field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-c8a9327e1a50a10ce949",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 70,
+              "column": 7
+            },
+            {
+              "title": "✅ Successful login: Should successfully login with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-b0a8281daf1ad4c33f3e",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "❌ Empty Fields: Should show validation errors when fields are empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-90be7570bb2d26625f32",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with wrong username and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-ed26a312305c270b09f6",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with incorrect password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-04e895ecec3649f73cb5",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with wrong username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-ab532c425febc4ceb0ba",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should show validation errors when password field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-f14bb3d99342953a9330",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 62,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should show validation errors when username field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-318ae8a03d88cc15c536",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 70,
+              "column": 7
+            },
+            {
+              "title": "✅ Successful login: Should successfully login with valid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-1d289f7ecd87c51ad6c6",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "❌ Empty Fields: Should show validation errors when fields are empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-8e12d8306324e524f403",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with wrong username and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-6a86aed01ade707576c2",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with incorrect password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-e3f9fa7b8db80dd19b09",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should Fail Login attempt with wrong username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-d068e75d5709f7847268",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should show validation errors when password field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-d06ef9c054de6bcef1ef",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 62,
+              "column": 7
+            },
+            {
+              "title": "❌ Unsuccessful login: Should show validation errors when username field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e52f83d84c1d033a8311-df4215205b56dab99c88",
+              "file": "UI Test/auth/login.spec.ts",
+              "line": 70,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "UI Test/sendMoney/sendMoney.spec.ts",
+      "file": "UI Test/sendMoney/sendMoney.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "send money test",
+          "file": "UI Test/sendMoney/sendMoney.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "✅ Successful Send Money : Should successfully send money to another user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-2574a0608928e8dc3c4b",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "❌ Minimal Account Balance Limitation : Should not be able to send full wallet balance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-b54d6397da5a4d93498e",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "❌ Maximum Ammout limitation : Should not be able to transfer amount more than the maximum account transaction limit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-866050a7925f4bfd5e41",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 43,
+              "column": 7
+            },
+            {
+              "title": "❌ Username Empty Fields Validation: Should show validation errors when username field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-2a42bc240e4d3c6122b1",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "❌ Amount Empty Fields Validation: Should show validation errors when amount field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-52d4c80c9f9347cf470a",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "✅ Successful Send Money : Should successfully send money to another user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-781dc95a800f3ebda9eb",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "❌ Minimal Account Balance Limitation : Should not be able to send full wallet balance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-d57ffa582a57e2939a4a",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "❌ Maximum Ammout limitation : Should not be able to transfer amount more than the maximum account transaction limit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-a89a50c72aebed1370a1",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 43,
+              "column": 7
+            },
+            {
+              "title": "❌ Username Empty Fields Validation: Should show validation errors when username field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-cdb9bb5abf65ab471fe8",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "❌ Amount Empty Fields Validation: Should show validation errors when amount field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-0f1c6657cae406c5d493",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "✅ Successful Send Money : Should successfully send money to another user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-5339af60e49447677f5d",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "❌ Minimal Account Balance Limitation : Should not be able to send full wallet balance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-029edbde2c0ab7a1e0df",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "❌ Maximum Ammout limitation : Should not be able to transfer amount more than the maximum account transaction limit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-48e834aa2056a0ad0733",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 43,
+              "column": 7
+            },
+            {
+              "title": "❌ Username Empty Fields Validation: Should show validation errors when username field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-32d6278c1eaea120f5cc",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "❌ Amount Empty Fields Validation: Should show validation errors when amount field is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "9be22356d4a3700c55fb-f56c01e7dc728e8e1788",
+              "file": "UI Test/sendMoney/sendMoney.spec.ts",
+              "line": 61,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "UI Test/viewHistory/viewHistory.spec.ts",
+      "file": "UI Test/viewHistory/viewHistory.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "View transaction history",
+          "file": "UI Test/viewHistory/viewHistory.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "✅ View transaction history : Should view list of transation history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3742b7da22c49f0acd7f-a0f8d407d8e620f68611",
+              "file": "UI Test/viewHistory/viewHistory.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "✅ Should display transaction details when clicked",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3742b7da22c49f0acd7f-833db854ef1a131d870e",
+              "file": "UI Test/viewHistory/viewHistory.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "✅ View transaction history : Should view list of transation history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3742b7da22c49f0acd7f-afd6e929734cf283f2b6",
+              "file": "UI Test/viewHistory/viewHistory.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "✅ Should display transaction details when clicked",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3742b7da22c49f0acd7f-467e97a89cfdf0a0d01f",
+              "file": "UI Test/viewHistory/viewHistory.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "✅ View transaction history : Should view list of transation history",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3742b7da22c49f0acd7f-f42649378d425b41262d",
+              "file": "UI Test/viewHistory/viewHistory.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "✅ Should display transaction details when clicked",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3742b7da22c49f0acd7f-d20898a69a9363180447",
+              "file": "UI Test/viewHistory/viewHistory.spec.ts",
+              "line": 21,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-06-04T17:11:16.158Z",
+    "duration": 10571.43,
+    "expected": 0,
+    "skipped": 54,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}
